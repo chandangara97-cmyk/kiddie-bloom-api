@@ -1,6 +1,0 @@
-{
-  "name": "Kiddie Bloom - Futuristic Learning Bookstore",
-  "description": "Futuristic children's tutorial books, digital learning holo-scrolls, and smart educational toys with immersive age-finder, currency switcher, and modern interactive experience.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

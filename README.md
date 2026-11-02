@@ -1,20 +1,10 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# kiddie-bloom-api (PRIVATE repo)
 
-# Run and deploy your AI Studio app
+Node payment/download API for Kiddie Bloom, deployed on Render. The public website lives in a separate repo.
+- `index.js` — server (Razorpay orders, payment verification, one-time PDF download links)
+- `catalog.cjs` — server-side price list (regenerate if you add shop items in the site's `src/data/initialData.ts`)
+- `private-pdfs/<id>.pdf` — paid PDFs, sent only after payment
+- `RENDER-SETUP.md` — Render settings and environment variables
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/1e32d088-5b5b-44f5-86cb-f9680982c479
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Keep this repository PRIVATE. Never commit `.env` or service-account JSON.
+Run locally: `npm install && npm start` (needs the variables from `.env.example` in the environment).
